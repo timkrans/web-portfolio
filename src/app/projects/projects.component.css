@@ -1,0 +1,219 @@
+/* Global Styles */
+body {
+  background-color: #121212; /* Deep dark background */
+  color: #eaeaea; /* Light soft color for text */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Header */
+h1.display-4, h2 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+/* Layout and Spacing */
+.container {
+  max-width: 1200px;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+/* Card Styles */
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Ensure the text in the card is also centered */
+}
+
+/* Button Styling */
+.btn-highlight {
+  background-color: #ffcc00; /* Bright Yellow color */
+  color: #121212; /* Dark text color */
+  padding: 12px 24px; /* More padding for bigger buttons */
+  font-size: 1.1rem; /* Slightly larger font */
+  text-transform: uppercase; /* Uppercase text for better visibility */
+  font-weight: bold; /* Make the text bold */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  margin-top: 20px; /* Add some space above the button */
+}
+
+.btn-highlight:hover {
+  background-color: #e0a800; /* Darker shade of yellow for hover */
+  color: #ffffff; /* White text on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Ensure the "View on GitHub" buttons are properly aligned and spaced */
+.btn-dark {
+  display: inline-block; /* Make sure the button behaves like an inline element */
+  margin-top: 20px;
+  width: auto; /* Adjust button width based on content */
+  text-align: center; /* Ensure the text is centered inside the button */
+  padding: 12px 24px; /* Standard padding for consistency */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .col-lg-4 {
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+  }
+}
+/* Tags Styling */
+.tags {
+  margin-top: 10px;
+}
+
+.tags .badge {
+  background-color: #1f1f1f; /* Dark background for tags */
+  color: #eaeaea; /* Light text for tags */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  margin: 3px;
+  padding: 6px 12px; /* Add padding for better tag appearance */
+  border-radius: 20px; /* Rounded corners for tags */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.tags .badge:hover {
+  background-color: #ffcc00; /* Yellow hover effect */
+  transform: scale(1.1); /* Slightly enlarge the badge */
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 60px;
+  border-left: 2px solid #444; /* Vertical line for each timeline item */
+  padding-bottom: 30px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 10px;
+  height: 10px;
+  width: 10px;
+  background-color: #ffcc00; /* Highlight color for timeline dots */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.6); /* Glowing effect */
+}
+
+/* Timeline Title */
+.timeline-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+/* Timeline Text */
+.timeline-item p {
+  color: #bbb;
+  font-size: 1.1rem;
+}
+
+/* Timeline List */
+.timeline-item ul {
+  padding-left: 20px;
+}
+
+.timeline-item li {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Button Styles for Timeline */
+.btn-outline-primary {
+  border-color: #ffcc00;
+  color: #ffcc00;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ffcc00;
+  color: #ffffff;
+  border-color: #ffcc00;
+}
+
+/* Horizontal Divider */
+hr.border-light {
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 20px 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .col-lg-4 {
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+  }
+
+  .timeline-item {
+    padding-left: 20px;
+  }
+
+  .timeline-item::before {
+    left: 20px;
+  }
+
+  .timeline-item p, .timeline-item li {
+    font-size: 1rem; /* Make text smaller on mobile */
+  }
+}

@@ -1,0 +1,216 @@
+
+/* Section Header */
+h1.display-4 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 60px;
+  border-left: 2px solid #444; /* Vertical line for each timeline item */
+  padding-bottom: 30px;
+}
+
+/* Timeline Dot */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px; /* Position the dot to the left of the timeline item */
+  top: 20px;  /* Adjust dot position to avoid overlapping with title */
+  height: 12px;  /* Increased size for better visibility */
+  width: 12px;  /* Increased size for better visibility */
+  background-color: #ffcc00; /* Highlight color for timeline dots */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.6); /* Glowing effect */
+  z-index: 0;  /* Ensure dot stays behind the title */
+}
+
+/* Timeline Title */
+.timeline-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  position: relative; /* Ensure title stays on top of the dot */
+  z-index: 1; /* Ensure the title is above the dot */
+}
+
+/* Timeline Text */
+.timeline-item p {
+  color: #bbb;
+  font-size: 1.1rem;
+}
+
+/* Timeline List */
+.timeline-item ul {
+  padding-left: 20px;
+}
+
+.timeline-item li {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+.btn-outline-primary {
+  border-color: #ffcc00;
+  color: #ffcc00;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ffcc00;
+  color: #ffffff;
+  border-color: #ffcc00;
+}
+
+/* Horizontal Divider */
+hr.border-light {
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 20px 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsiveness for Mobile */
+@media (max-width: 767px) {
+  .timeline-item {
+    padding-left: 20px; /* Adjust padding for mobile */
+    margin-bottom: 30px; /* Adjust margin for better spacing */
+    border-left: none; /* Remove vertical line on mobile */
+  }
+
+  /* Adjust the dot position for smaller screens */
+  .timeline-item::before {
+    left: 20px; /* Move the dot more to the left */
+    top: 30px; /* Ensure dot isn't overlapping title */
+    height: 0px; /* Make the dot smaller */
+    width: 0px; /* Adjust size of the dot */
+  }
+
+  /* Timeline Text */
+  .timeline-item p, 
+  .timeline-item li {
+    font-size: 1rem; /* Make text smaller on mobile */
+  }
+
+  .timeline-title {
+    font-size: 1.3rem; /* Make title a bit smaller */
+  }
+
+  /* Make the timeline items stack vertically */
+  .timeline-item {
+    padding-left: 0; /* Remove extra padding */
+    border-left: none; /* Remove border */
+    margin-bottom: 20px; /* Adjust space between items */
+  }
+}
+
+/* Card Styles for Timeline */
+.card.bg-dark {
+  background-color: #181818; /* Dark background */
+  border-radius: 10px; /* Rounded corners for card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+.card-body {
+  padding: 25px; /* More padding inside the cards */
+}
+
+.card-title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: #bbb;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.card-body a {
+  color: #ffcc00;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+.card-body a:hover {
+  background-color: #ffcc00;
+  color: #121212;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.6);
+}
+
+/* Tags Styling for Projects */
+.tags {
+  margin-top: 15px;
+}
+
+.tags .badge {
+  background-color: #444;
+  color: #fff;
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+}
+
+.tags .badge:hover {
+  background-color: #ffcc00;
+  color: #121212;
+  cursor: pointer;
+}
+
+/* Timeline Text (Date and Location) */
+.timeline-item p.text-muted {
+  color: #d1d1d1; /* Lighter gray color for better readability */
+  font-size: 1.1rem;
+  font-style: italic; /* Slightly italicize the text for distinction */
+}
+
+/* Keep other text styles intact */
+.timeline-item ul li {
+  color: #fff; /* Keep the project details text white */
+}
+
+/* Technologies as Tags */
+.timeline-item .technologies {
+  margin-top: 20px;
+}
+
+.timeline-item .technologies .badge {
+  background-color: #444; /* Dark background for tags */
+  color: #fff; /* White text for readability */
+  padding: 8px 16px;
+  margin-right: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  text-transform: uppercase; /* Capitalize the text for consistency */
+  font-weight: bold; /* Make the text bold */
+}
+
+.timeline-item .technologies .badge:hover {
+  background-color: #ffcc00; /* Highlight color on hover */
+  color: #121212; /* Dark text on hover */
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.6); /* Glowing effect */
+}

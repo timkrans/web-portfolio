@@ -1,0 +1,74 @@
+/* Form Container */
+form {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+label{
+    color: #ffffff;
+}
+
+
+/* Heading Styles */
+h1.display-4 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #444;
+  padding: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color:  #ffcc00;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styles */
+button[type="submit"] {
+  background-color:  #ffcc00;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color:  #eecd49;
+  cursor: pointer;
+}
+
+button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Label Styles */
+.form-label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  form {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  h1.display-4 {
+    font-size: 2rem;
+  }
+}

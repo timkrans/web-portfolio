@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+  background-color: #121212; /* Deep dark background */
+  color: #eaeaea; /* Light soft color for text */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container and Section Layout */
+.container {
+  max-width: 1200px;
+  margin-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Section Headers */
+h1.display-4, h2 {
+  color: #eaeaea; /* Light color for titles */
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+/* Buttons */
+/* Card Styles */
+.card {
+  border-radius: 8px;
+  border: none;
+}
+
+.card.bg-dark {
+  background-color: #1f1f1f; /* Slightly lighter dark for cards */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #eaeaea; /* Light color for card titles */
+}
+
+.card-text {
+  color: #dcdcdc; /* Soft light gray for text */
+}
+
+/* Stats & Languages Graphs */
+img {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+/* Button styling */
+.btn-highlight {
+  background-color: #ffcc00; /* Bright Yellow color */
+  color: #121212; /* Dark text color */
+  padding: 12px 24px; /* More padding for bigger buttons */
+  font-size: 1.1rem; /* Slightly larger font */
+  text-transform: uppercase; /* Uppercase text for better visibility */
+  font-weight: bold; /* Make the text bold */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-highlight:hover {
+  background-color: #e0a800; /* Darker shade of yellow for hover */
+  color: #ffffff; /* White text on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Ensure the "View on GitHub" buttons are properly aligned and spaced */
+.btn-light {
+  display: block;
+  width: 100%; /* Make button take up the full width */
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
+/* Tags Styling */
+.tags {
+  margin-top: 10px;
+}
+
+.tags .badge {
+  background-color: #1f1f1f; /* Dark background for tags */
+  color: #eaeaea; /* Light text for tags */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  margin: 3px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.tags .badge:hover {
+  background-color: #ffcc00; /* Yellow hover effect */
+  transform: scale(1.1); /* Slightly enlarge the badge */
+}

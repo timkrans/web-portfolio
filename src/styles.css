@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+/* Sets the background color for the entire program */
+
+  /* Global Styles */
+/* Global Styles */
+/* Body Styling */
+
+
 body {
-    background-color: grey; /* Sets the background color for the entire program */
-  }
-  
+  background-color: rgba(18, 18, 18, 1);
+}

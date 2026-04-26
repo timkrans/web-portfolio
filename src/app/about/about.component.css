@@ -1,0 +1,49 @@
+
+body {
+  color: #eaeaea; 
+}
+/* Section Header */
+h1.display-4 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+p{
+    color: #ffffff;
+}
+
+p.lead {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+p.text-white {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+
+/* Text Muted Styling */
+
+/* General Container Styling */
+.container {
+  max-width: 900px;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  h1.display-4 {
+    font-size: 2rem;
+  }
+
+  p.lead, p.text-white {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}

@@ -1,66 +1,80 @@
-<div class="container text-center mt-4">
-    <h1 class="display-4">Welcome to My Portfolio</h1>
-    <p class="lead">
-      Hi, I'm Timothy Computer Scientist/Software Engineer. Explore my work and achievements!
+<div class="container text-center mt-5">
+    <h1 class="display-4 text-light">Welcome to My Portfolio</h1>
+    <p class="lead text-light">
+      Hi, I'm Timothy, a Computer Scientist/Software Engineer. Explore my work and achievements!
     </p>
     <!-- Call-to-Actions -->
     <div class="mt-4">
-      <button routerLink="/projects" class="btn btn-dark  btn-lg mx-2">View My Projects</button>
-      <button routerLink="/contact-me" class="btn btn-dark btn-lg mx-2">Contact Me</button>
+      <button routerLink="/projects" class="btn btn-highlight mx-2">View My Projects</button>
+      <button routerLink="/contact-me" class="btn btn-highlight mx-2">Contact Me</button>
     </div>
     <div class="mt-5">
-      <h2>Featured Projects</h2>
-      <p class="text-muted">Take a look at some of my best work.</p>
+      <h2 class="text-light">Featured Projects</h2>
+      <p class="text-light">Take a look at some of my best work.</p>
       <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card bg-dark">
-              <div class="card-body">
-              <h5 class="card-title text-white">Addition Machine Learning</h5>
-              <p class="card-text text-white">
-                  This project was me trying to grasp the math behind simple machine learning in 
-                  c++ so I could see all the math behind it uses. It is an implementation of a simple 
-                  neural network that learns to perform addition through supervised learning. 
-              </p>
-              <a href="https://github.com/timkrans/additionMachineLearning" target="_blank" class="btn btn-secondary">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card bg-dark">
-              <div class="card-body">
-              <h5 class="card-title text-white">Cryptocurrency Price Direction Prediction</h5>
-              <p class="card-text text-white">
-                This project analyzes historical cryptocurrency data to predict whether the price will 
-                go up or down on the next trading day. The model uses various technical indicators including 
-                RSI, MACD, Bollinger Bands, and On-Balance Volume to make predictions.
-              </p>
-              <a href="https://github.com/timkrans/cryptoML" target="_blank" class="btn btn-secondary">View on GitHub</a>
-            </div>
-          </div>
-        </div>
+        <!-- Project 1: Context-Aware-AI -->
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card bg-dark">
             <div class="card-body">
-              <h5 class="card-title text-white">Angular Web Portfolio</h5>
+              <h5 class="card-title text-white">Context-Aware-AI</h5>
               <p class="card-text text-white">
-                This project is a fully responsive and interactive web portfolio developed using Angular. 
-                Designed with scalability and modularity in mind, it serves as a comprehensive showcase of my skills, 
-                projects, and accomplishments while leveraging the power of Angular's component-based architecture. 
-                This is also the current website you are viewing.
+              A multi repository, full stack memory retrieval platform built with a Vite frontend and Go backend. The system encodes and persists user memories for contextual AI interactions, integrates an optional reasoning model, and implements Retrieval-Augmented Generation (RAG) for document ingestion and semantic querying.
               </p>
-              <a href="https://github.com/timkrans/web-portfolio" target="_blank" class="btn btn-secondary">View on GitHub</a>
+              <div class="tags">
+                <span class="badge badge-pill">Go</span>
+                <span class="badge badge-pill">LLM</span>
+                <span class="badge badge-pill">Vite</span>
+                <span class="badge badge-pill">Retrieval-Augmented Generation</span>
+              </div>
+              <a href="https://github.com/timkrans/Context-Aware-Frontend" target="_blank" class="btn btn-highlight mt-3">View on GitHub</a>
+            </div>
           </div>
         </div>
+        <!-- Project 2: Code Generating CLI -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card bg-dark">
+            <div class="card-body">
+              <h5 class="card-title text-white">Lang Trainer</h5>
+              <p class="card-text text-white">
+                This repo was made to be a free language trainer that would run completely local an platform independent for english speakers, it focuses on privacy and offline usability by avoiding external servers entirely. The goal is to provide a free, lightweight, and accessible tool for practicing vocabulary and phrases without relying on cloud services.
+              </p>
+              <div class="tags">
+                <span class="badge badge-pill">Expo</span>
+                <span class="badge badge-pill">React Native</span>
+                <span class="badge badge-pill">TypeScript</span>
+              </div>
+              <a href="https://github.com/timkrans/lang-trainer" target="_blank" class="btn btn-highlight mt-3">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3: Code Generating CLI -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card bg-dark">
+            <div class="card-body">
+              <h5 class="card-title text-white">Code Generating CLI</h5>
+              <p class="card-text text-white">
+                  A command line tool built in Go that turns natural language prompts into complete coding projects using LLMs. Currently supports basic code generation and file writing. Future updates will add error handling, project iteration, and more. See the README for details.
+              </p>
+              <div class="tags">
+                <span class="badge badge-pill">Go</span>
+                <span class="badge badge-pill">LLM</span>
+                <span class="badge badge-pill">CLI</span>
+              </div>
+              <a href="https://github.com/timkrans/Code-Gen-Cli" target="_blank" class="btn btn-highlight mt-3">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+      <!-- Stats Section -->
+      <h1 class="text-light mt-5">Stats</h1>
+      <div>
+        <img src="https://github-readme-stats.vercel.app/api?username=timkrans&hide_title=false&hide_rank=true&show_icons=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false" height="150" alt="stats graph" />
       </div>
-      <h1 align="center">Stats</h1>
-      <div align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=timkrans&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false" height="150" alt="stats graph"  />
-      </div>
-      <h1 align="center">Top Languages</h1>
-      <div align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=timkrans&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=10&theme=dark&hide_border=false" height="150" alt="languages graph"  />
+      
+      <!-- Top Languages Section -->
+      <h1 class="text-light mt-5">Top Languages</h1>
+      <div>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=timkrans&locale=en&hide_title=false&hide=HTML,css,Makefile&layout=compact&card_width=320&langs_count=7&theme=dark&hide_border=false" height="150" alt="languages graph"  />
       </div>
     </div>
-  </div>
 </div>
-  

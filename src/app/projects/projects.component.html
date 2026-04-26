@@ -1,86 +1,129 @@
 <div class="container mt-4">
     <h1 class="display-4 text-center">My Projects</h1>
     <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card bg-dark">
-              <div class="card-body">
-              <h5 class="card-title text-white">Addition Machine Learning</h5>
-              <p class="card-text text-white">
-                  This project was me trying to grasp the math behind simple machine learning in 
-                  c++ so I could see all the math behind it uses. It is an implementation of a simple 
-                  neural network that learns to perform addition through supervised learning. 
-              </p>
-              <a href="https://github.com/timkrans/additionMachineLearning" target="_blank" class="btn btn-secondary">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card bg-dark">
-              <div class="card-body">
-              <h5 class="card-title text-white">Cryptocurrency Price Direction Prediction</h5>
-              <p class="card-text text-white">
-                This project analyzes historical cryptocurrency data to predict whether the price will 
-                go up or down on the next trading day. The model uses various technical indicators including 
-                RSI, MACD, Bollinger Bands, and On-Balance Volume to make predictions.
-              </p>
-              <a href="https://github.com/timkrans/cryptoML" target="_blank" class="btn btn-secondary">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card bg-dark">
-              <div class="card-body">
-                <h5 class="card-title text-white">Angular Web Portfolio</h5>
-                <p class="card-text text-white">
-                  This project is a fully responsive and interactive web portfolio developed using Angular. 
-                  Designed with scalability and modularity in mind, it serves as a comprehensive showcase of my skills, 
-                  projects, and accomplishments while leveraging the power of Angular's component-based architecture. 
-                  This is also the current website you are viewing.
-                </p>
-                <a href="https://github.com/timkrans/web-portfolio" target="_blank" class="btn btn-secondary">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card bg-dark">
-            <div class="card-body">
-              <h5 class="card-title text-white">Dockerized SQL Database with Python and TypeScript APIs</h5>
-              <p class="card-text text-white">
-                This project is a powerful SQL database solution, containerized using Docker for efficient deployment and scalability.
-                It leverages Python and TypeScript APIs to provide seamless interaction, enabling secure and dynamic data manipulation.
-              </p>
-              <a href="https://github.com/timkrans/sql-test" target="_blank" class="btn btn-secondary">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card bg-dark">
-            <div class="card-body">
-                <h5 class="card-title text-white">Dijkstra's Algorithm</h5>
-                <p class="card-text text-white">
-                  This project focuses on implementing Dijkstra's Algorithm to solve pathfinding problems efficiently. 
-                  Dijkstra's Algorithm is a classic approach used in graph theory to find the shortest path between nodes in a weighted graph. 
-                  The project showcases the algorithm's ability to minimize path costs and can be applied to various scenarios, 
-                  such as route planning for maps, network routing, and resource optimization.
-                </p>
-                <a href="https://github.com/timkrans/Portfolio/tree/main/dijkstra_algorithm" target="_blank" class="btn btn-secondary">View on GitHub</a>
-            </div>
-        </div>
-      </div>
+      <!-- Project 1: Context-Aware-AI -->
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card bg-dark">
           <div class="card-body">
-            <h5 class="card-title text-white">Sketch software</h5>
+            <h5 class="card-title text-white">Context-Aware-AI</h5>
             <p class="card-text text-white">
-                This project is an interactive and feature-rich sketching application developed using JavaFX. 
-                The software provides users with the tools to create, edit, and 
-                save hand-drawn sketches, offering an intuitive and seamless drawing experience. 
-                It leverages JavaFX's robust UI capabilities to deliver smooth, responsive performance.
+             A multi repository, full stack memory retrieval platform built with a Vite frontend and Go backend. The system encodes and persists user memories for contextual AI interactions, integrates an optional reasoning model, and implements Retrieval-Augmented Generation (RAG) for document ingestion and semantic querying.
             </p>
-            <a href="https://github.com/timkrans/Portfolio/tree/main/Sketchy" target="_blank" class="btn btn-secondary">View on GitHub</a>
+            <div class="tags">
+              <span class="badge badge-pill">Go</span>
+              <span class="badge badge-pill">LLM</span>
+              <span class="badge badge-pill">Vite</span>
+              <span class="badge badge-pill">Retrieval-Augmented Generation</span>
+            </div>
+            <a href="https://github.com/timkrans/Context-Aware-Frontend" target="_blank" class="btn btn-highlight mt-3">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2: Code Generating CLI -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card bg-dark">
+          <div class="card-body">
+            <h5 class="card-title text-white">Lang Trainer</h5>
+            <p class="card-text text-white">
+               This repo was made to be a free language trainer that would run completely local an platform independent for english speakers, it focuses on privacy and offline usability by avoiding external servers entirely. The goal is to provide a free, lightweight, and accessible tool for practicing vocabulary and phrases without relying on cloud services.
+            </p>
+            <div class="tags">
+              <span class="badge badge-pill">Expo</span>
+              <span class="badge badge-pill">React Native</span>
+              <span class="badge badge-pill">TypeScript</span>
+            </div>
+            <a href="https://github.com/timkrans/lang-trainer" target="_blank" class="btn btn-highlight mt-3">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3: Code Generating CLI -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card bg-dark">
+          <div class="card-body">
+            <h5 class="card-title text-white">Code Generating CLI</h5>
+            <p class="card-text text-white">
+                A command line tool built in Go that turns natural language prompts into complete coding projects using LLMs. Currently supports basic code generation and file writing. Future updates will add error handling, project iteration, and more. See the README for details.
+            </p>
+            <div class="tags">
+              <span class="badge badge-pill">Go</span>
+              <span class="badge badge-pill">LLM</span>
+              <span class="badge badge-pill">CLI</span>
+            </div>
+            <a href="https://github.com/timkrans/Code-Gen-Cli" target="_blank" class="btn btn-highlight mt-3">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Cryptocurrency Price Direction Prediction -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card bg-dark">
+          <div class="card-body">
+            <h5 class="card-title text-white">Cryptocurrency Price Direction Prediction</h5>
+            <p class="card-text text-white">
+                This project analyzes historical cryptocurrency data to predict whether the price will go up or down on the next trading day. The model uses various technical indicators including RSI, MACD, Bollinger Bands, and On-Balance Volume to make predictions.
+            </p>
+            <div class="tags">
+              <span class="badge badge-pill">Machine Learning</span>
+              <span class="badge badge-pill">Crypto</span>
+              <span class="badge badge-pill">Python</span>
+            </div>
+            <a href="https://github.com/timkrans/cryptoML" target="_blank" class="btn btn-highlight mt-3">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: macOS Command Agent -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card bg-dark">
+          <div class="card-body">
+            <h5 class="card-title text-white">macOS Command Agent</h5>
+            <p class="card-text text-white">
+                An AI-powered command-line agent for macOS that safely executes user requests using natural language. Integrates with local LLMs like Ollama or Hugging Face, interprets commands, enforces a security whitelist, and returns detailed output with system info.
+            </p>
+            <div class="tags">
+              <span class="badge badge-pill">macOS</span>
+              <span class="badge badge-pill">AI</span>
+              <span class="badge badge-pill">LLM</span>
+            </div>
+            <a href="https://github.com/timkrans/mac-agent" target="_blank" class="btn btn-highlight mt-3">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: Addition Machine Learning -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card bg-dark">
+          <div class="card-body">
+            <h5 class="card-title text-white">Addition Machine Learning</h5>
+            <p class="card-text text-white">
+                This project was me trying to grasp the math behind simple machine learning in C++ so I could see all the math behind it. It is an implementation of a simple neural network that learns to perform addition through supervised learning.
+            </p>
+            <div class="tags">
+              <span class="badge badge-pill">Machine Learning</span>
+              <span class="badge badge-pill">C++</span>
+              <span class="badge badge-pill">Neural Networks</span>
+            </div>
+            <a href="https://github.com/timkrans/additionMachineLearning" target="_blank" class="btn btn-highlight mt-3">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7: Angular Web Portfolio -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card bg-dark">
+          <div class="card-body">
+            <h5 class="card-title text-white">Angular Web Portfolio</h5>
+            <p class="card-text text-white">
+                This project is a fully responsive and interactive web portfolio developed using Angular. Designed with scalability and modularity in mind, it serves as a comprehensive showcase of my skills, projects, and accomplishments while leveraging the power of Angular's component-based architecture.
+            </p>
+            <div class="tags">
+              <span class="badge badge-pill">Angular</span>
+              <span class="badge badge-pill">Web Development</span>
+              <span class="badge badge-pill">Frontend</span>
+            </div>
+            <a href="https://github.com/timkrans/web-portfolio" target="_blank" class="btn btn-highlight mt-3">View on GitHub</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
+</div>
